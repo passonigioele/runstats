@@ -15,7 +15,7 @@ def get_activities():
     while True:
         url = f"{BASE_URL}/athlete/activities"
         #params = {"per_page": 200, "page": page}
-        params = {"per_page": 200, "page": 1}
+        params = {"per_page": 10, "page": 1}
         headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}
         r = requests.get(url, headers=headers, params=params)
         data = r.json()
