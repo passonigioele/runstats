@@ -23,6 +23,9 @@ def get_activities():
             break
         activities.extend(data)
         page += 1
+        if len(filtered_activities) >= 10:
+            break
+
     return pd.DataFrame(activities)
 
 # --- UI ---
