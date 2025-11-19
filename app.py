@@ -5,7 +5,8 @@ import altair as alt
 
 # --- Config ---
 ACCESS_TOKEN = "66ff4fba9c2ad49a91fbcab7ed5029f001143b0c"
-BASE_URL = "https://www.strava.com/api/v3"
+BASE_URL = "https://www.strava.com"
+#"https://www.strava.com/api/v3"
 
 # --- Fetch Data ---
 @st.cache_data
@@ -23,8 +24,8 @@ def get_activities():
             break
         activities.extend(data)
         page += 1
-        if len(filtered_activities) >= 10:
-            break
+        #if len(filtered_activities) >= 10:
+        #    break
 
     return pd.DataFrame(activities)
 
