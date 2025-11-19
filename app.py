@@ -4,7 +4,7 @@ import pandas as pd
 import altair as alt
 
 # --- Config ---
-ACCESS_TOKEN = "your_access_token"
+ACCESS_TOKEN = "66ff4fba9c2ad49a91fbcab7ed5029f001143b0c"
 BASE_URL = "https://www.strava.com/api/v3"
 
 # --- Fetch Data ---
